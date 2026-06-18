@@ -308,4 +308,9 @@ footer {
   .stats {
     margin-top: 20px;
   }
+.logo img {
+    height: 45px;    /* This limits the logo height so it fits nicely in your navbar */
+    width: auto;     /* This keeps your logo's proportions perfect so it doesn't distort */
+    display: block;  /* Removes any weird spacing issues below the image */
+}
 }
