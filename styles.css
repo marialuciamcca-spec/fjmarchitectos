@@ -308,9 +308,19 @@ footer {
   .stats {
     margin-top: 20px;
   }
+/* Fix logo size and alignment */
 .logo img {
-    height: 45px;    /* This limits the logo height so it fits nicely in your navbar */
-    width: auto;     /* This keeps your logo's proportions perfect so it doesn't distort */
-    display: block;  /* Removes any weird spacing issues below the image */
+    height: 50px;       /* Forces the logo to be exactly 50px tall */
+    width: auto;        /* Maintains the original proportions */
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Ensure the navigation bar handles the height properly */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Gives the navbar breathing room */
 }
 }
