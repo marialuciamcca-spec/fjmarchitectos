@@ -67,9 +67,9 @@ body {
   display: flex;
   align-items: center;
   padding: 80px 24px;
-  background:
-    linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
-    url("images/hero.jpg");
+background: 
+    linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)), 
+    url("toyota sps render final.jpg");
   background-size: cover;
   background-position: center;
   color: red;
