@@ -310,7 +310,7 @@ footer {
   }
 /* Fix logo size and alignment */
 .logo img {
-    height: 15px;       /* Forces the logo to be exactly 50px tall */
+    height: 7px;       /* Forces the logo to be exactly 50px tall */
     width: auto;        /* Maintains the original proportions */
     display: inline-block;
     vertical-align: middle;
