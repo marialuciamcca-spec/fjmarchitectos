@@ -310,17 +310,17 @@ footer {
   }
 /* Fix logo size and alignment */
 .logo img {
-    height: 7px;       /* Forces the logo to be exactly 50px tall */
-    width: auto;        /* Maintains the original proportions */
+    height: 35px !important;       /* Try 35px or 30px to make it tiny and elegant */
+    width: auto !important;        
+    max-height: 35px !important;   
     display: inline-block;
     vertical-align: middle;
 }
 
-/* Ensure the navigation bar handles the height properly */
+/* Keep this so your links align perfectly with the smaller logo */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px; /* Gives the navbar breathing room */
-}
+    padding: 10px 20px;
 }
