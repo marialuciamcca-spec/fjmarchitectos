@@ -310,9 +310,9 @@ footer {
   }
 /* Fix logo size and alignment */
 .logo img {
-    height: 28px !important;       /* Try 35px or 30px to make it tiny and elegant */
+    height: 25px !important;       /* Try 35px or 30px to make it tiny and elegant */
     width: auto !important;        
-    max-height: 28px !important;   
+    max-height: 25px !important;   
     display: inline-block;
     vertical-align: middle;
 }
