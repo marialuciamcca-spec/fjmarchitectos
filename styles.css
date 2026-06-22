@@ -5,18 +5,18 @@
 }
 
 :root {
-  --dark: #111111;
-  --cream: #f5f1ea;
-  --gray: #666666;
-  --light: #ffffff;
-  --accent: #b28b5e;
+    --dark: #111111;
+    --cream: #fcfbfa;
+    --gray: #666666;
+    --light: #ffffff;
+    --accent: #b28b5e;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  color: var(--dark);
-  background: var(--cream);
-  line-height: 1.6;
+    font-family: Garamond, Georgia, "Times New Roman", serif;
+    color: var(--dark);
+    background: var(--cream);
+    line-height: 1.6;
 }
 
 .header {
