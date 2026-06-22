@@ -316,10 +316,10 @@ footer {
     vertical-align: middle;
 }
 
-/* Keep this so your links align perfectly with the smaller logo */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
+.navbar .logo img {
+  height: 25px !important;
+  width: auto !important;
+  max-height: 25px !important;
+  object-fit: contain;
+
 }
