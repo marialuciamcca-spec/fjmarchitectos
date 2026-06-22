@@ -1,10 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap');
 
 :root {
   --dark: #111111;
@@ -12,6 +12,10 @@
   --light: #ffffff;
   --red: #9b1c24;
   --red-dark: #7e151c;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -27,7 +31,6 @@ body {
   z-index: 100;
   background: white;
   border-bottom: 3px solid var(--red);
-  height: 115px;
 }
 
 .navbar {
@@ -183,7 +186,15 @@ h3 {
 .section {
   max-width: 1150px;
   margin: auto;
-  padding: 80px 24px;
+  padding: 60px 24px;
+}
+
+#nosotros,
+#proyectos,
+#servicios,
+#legado,
+#contacto {
+  scroll-margin-top: 110px;
 }
 
 .split {
@@ -351,13 +362,5 @@ footer {
 
   .logo img {
     height: 55px;
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 125px;
-}
-
-section {
-  scroll-margin-top: 125px;
-
-
+  }
 }
