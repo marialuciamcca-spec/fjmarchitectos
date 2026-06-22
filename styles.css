@@ -27,6 +27,7 @@ body {
   z-index: 100;
   background: white;
   border-bottom: 3px solid var(--red);
+  height: 115px;
 }
 
 .navbar {
@@ -350,13 +351,13 @@ footer {
 
   .logo img {
     height: 55px;
-  }
-  html {
+html {
   scroll-behavior: smooth;
-  scroll-padding-top: 110px;
+  scroll-padding-top: 125px;
 }
 
 section {
-  scroll-margin-top: 110px;
+  scroll-margin-top: 125px;
+
 
 }
