@@ -203,6 +203,28 @@ h3 {
   gap: 60px;
 }
 
+.section p {
+  margin-bottom: 14px;
+}
+
+.vision-box {
+  margin-top: 70px;
+  padding: 40px;
+  border-left: 4px solid var(--red);
+  background: #f7f7f7;
+  max-width: 850px;
+}
+
+.vision-box h3 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.vision-box p {
+  font-size: 1.05rem;
+  margin-bottom: 14px;
+}
+
 .filters {
   margin: 30px 0;
 }
@@ -274,15 +296,23 @@ h3 {
 
 .service-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 18px;
 }
 
 .service-grid div {
   background: rgba(255,255,255,.08);
-  padding: 28px;
+  padding: 22px;
   border-radius: 12px;
   border-top: 3px solid var(--red);
+}
+
+.service-grid h3 {
+  font-size: 1.1rem;
+}
+
+.service-grid p {
+  font-size: 0.95rem;
 }
 
 .timeline {
