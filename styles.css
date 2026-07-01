@@ -473,34 +473,23 @@ footer {
     height: 55px;
   }
 
-  .filter-btn {
-    margin-right: 18px;
-    margin-bottom: 10px;
-  }
-  .filter-btn {
-  text-decoration: none;
-}
+/* ===== PÁGINAS DE PROYECTOS ===== */
 
-.filter-btn:hover,
-.filter-btn:focus,
-.filter-btn:visited {
-  text-decoration: none;
-
-}
-  .filters a,
+.filters a,
 .filters a:link,
 .filters a:visited,
 .filters a:hover,
 .filters a:active {
   text-decoration: none !important;
+  color: inherit;
 }
 
-.filter-btn {
+.filters .filter-btn {
+  display: inline-block;
   text-decoration: none !important;
-  border-bottom: none;
 }
 
-.filter-btn.active {
-  text-decoration: none !important;
-  border-bottom: none;
+.filters .filter-btn.active {
+  color: var(--red);
+}
 }
