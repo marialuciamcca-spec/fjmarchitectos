@@ -9,10 +9,12 @@ if (menuBtn) {
 
 const filterButtons = document.querySelectorAll(".filter-btn");
 const projectCards = document.querySelectorAll(".project-card");
+const moreProjectsBtn = document.getElementById("moreProjectsBtn");
 
 filterButtons.forEach((button) => {
   button.addEventListener("click", () => {
     const filter = button.dataset.filter;
+    const link = button.dataset.link;
 
     filterButtons.forEach((btn) => btn.classList.remove("active"));
     button.classList.add("active");
@@ -26,6 +28,18 @@ filterButtons.forEach((button) => {
         card.style.display = "none";
       }
     });
+
+    moreProjectsBtn.href = link;
+
+    if (filter === "todos") {
+      moreProjectsBtn.textContent = "Ver más proyectos";
+    } else if (filter === "comercial") {
+      moreProjectsBtn.textContent = "Ver más proyectos comerciales";
+    } else if (filter === "residencial") {
+      moreProjectsBtn.textContent = "Ver más proyectos residenciales";
+    } else if (filter === "industrial") {
+      moreProjectsBtn.textContent = "Ver más proyectos industriales";
+    }
   });
 });
 
