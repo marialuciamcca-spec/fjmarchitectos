@@ -487,3 +487,20 @@ footer {
   text-decoration: none;
 
 }
+  .filters a,
+.filters a:link,
+.filters a:visited,
+.filters a:hover,
+.filters a:active {
+  text-decoration: none !important;
+}
+
+.filter-btn {
+  text-decoration: none !important;
+  border-bottom: none;
+}
+
+.filter-btn.active {
+  text-decoration: none !important;
+  border-bottom: none;
+}
