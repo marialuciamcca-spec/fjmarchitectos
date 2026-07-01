@@ -4,12 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>FJM Arquitectos | Portafolio</title>
-<link rel="stylesheet" href="styles.css?v=17" />
+  <link rel="stylesheet" href="styles.css?v=18" />
 </head>
+
 <body>
   <header class="header">
     <nav class="navbar">
-<a href="#inicio" class="logo"><img src="fjmlogo2.jpg" alt="FJM Arquitectos"></a>      <ul class="nav-links" id="navLinks">
+      <a href="#inicio" class="logo">
+        <img src="fjmlogo2.jpg" alt="FJM Arquitectos">
+      </a>
+
+      <ul class="nav-links" id="navLinks">
         <li><a href="#nosotros">Nosotros</a></li>
         <li><a href="#proyectos">Proyectos</a></li>
         <li><a href="#servicios">Servicios</a></li>
@@ -25,7 +30,7 @@
         <p class="eyebrow">Visión · Diseño · Construcción</p>
         <h1>Diseñando y construyendo el futuro de Honduras desde 1970.</h1>
         <p>
-          FJM Arquitectos desarrolla proyectos residenciales, comerciales, institucionales y publicos en todo Honduras, 
+          FJM Arquitectos desarrolla proyectos residenciales, comerciales, institucionales y públicos en todo Honduras,
           ofreciendo un servicio integral desde la conceptualización hasta la entrega final de cada proyecto.
         </p>
         <div class="hero-buttons">
@@ -38,7 +43,7 @@
     <section class="stats">
       <div>
         <h2>250+</h2>
-        <p>Proyectos desarollados</p>
+        <p>Proyectos desarrollados</p>
       </div>
       <div>
         <h2>56+</h2>
@@ -50,48 +55,55 @@
       </div>
       <div>
         <h2>3</h2>
-        <p>Generaciones de Arquitectos</p>
+        <p>Generaciones de arquitectos</p>
       </div>
     </section>
 
-<section id="nosotros" class="section">
-  <div class="split">
-    <div>
-      <p class="eyebrow">Sobre la firma</p>
-      <h2>Arquitectura con experiencia, disciplina y visión</h2>
-    </div>
-    <div>
-      <p>
-        Desde 1970, la familia Martínez ha contribuido al desarrollo de proyectos arquitectónicos en Honduras.
-        Hoy, FJM Arquitectos continúa esa trayectoria bajo la dirección del Arq. Fernando José Martínez Casey,
-        ofreciendo servicios de diseño, supervisión y construcción a nivel nacional.
-      </p>
-      <p>
-        <strong>Arq. Fernando José Martínez Casey</strong><br>
-        Director de FJM Arquitectos<br>
-        Graduado de la Universidad de Kansas
-      </p>
-    </div>
-  </div>
+    <section id="nosotros" class="section">
+      <div class="split">
+        <div>
+          <p class="eyebrow">Sobre la firma</p>
+          <h2>Arquitectura con experiencia, disciplina y visión</h2>
+        </div>
+        <div>
+          <p>
+            Desde 1970, la familia Martínez ha contribuido al desarrollo de proyectos arquitectónicos en Honduras.
+            Hoy, FJM Arquitectos continúa esa trayectoria bajo la dirección del Arq. Fernando José Martínez Casey,
+            ofreciendo servicios de diseño, supervisión y construcción a nivel nacional.
+          </p>
+          <p>
+            <strong>Arq. Fernando José Martínez Casey</strong><br>
+            Director de FJM Arquitectos<br>
+            Graduado de la Universidad de Kansas
+          </p>
+        </div>
+      </div>
 
-  <div class="vision-box">
-    <p class="eyebrow">Nuestra visión</p>
-    <h3>La arquitectura como técnica y arte.</h3>
-    <p>
-      Para nosotros, la arquitectura es la más técnica de las artes y la más artística de las técnicas.
-      Buscamos desarrollar proyectos que logren un balance entre lo económico, lo ambiental,
-      lo arquitectónico y el contexto de cada obra.
-    </p>
-    <p>
-      Creemos en disfrutar nuestro trabajo y en involucrar al cliente durante todo el proceso,
-      para que cada proyecto refleje sus necesidades, su visión y el propósito del espacio.
-    </p>
-  </div>
-</section>
+      <div class="vision-box">
+        <p class="eyebrow">Nuestra visión</p>
+        <h3>La arquitectura como técnica y arte.</h3>
+        <p>
+          Para nosotros, la arquitectura es la más técnica de las artes y la más artística de las técnicas.
+          Buscamos desarrollar proyectos que logren un balance entre lo económico, lo ambiental,
+          lo arquitectónico y el contexto de cada obra.
+        </p>
+        <p>
+          Creemos en disfrutar nuestro trabajo y en involucrar al cliente durante todo el proceso,
+          para que cada proyecto refleje sus necesidades, su visión y el propósito del espacio.
+        </p>
+      </div>
+    </section>
 
-    <section id="proyectos" class="section">
-      <p class="eyebrow">Portafolio</p>
-      <h2>Proyectos destacados</h2>
+    <section id="proyectos" class="section project-section">
+      <div class="project-header">
+        <div>
+          <p class="eyebrow">Portafolio</p>
+          <h2>Proyectos destacados</h2>
+          <p class="project-intro">
+            Más de cinco décadas diseñando y construyendo espacios que inspiran, funcionan y perduran.
+          </p>
+        </div>
+      </div>
 
       <div class="filters">
         <button class="filter-btn active" data-filter="todos">Todos</button>
@@ -101,82 +113,111 @@
       </div>
 
       <div class="project-grid">
+
         <article class="project-card" data-category="comercial">
-          <div class="project-image">Foto del proyecto</div>
-          <h3>Plaza Macuelizo</h3>
-          <p>Diseño y Construcción de 950m² - Tegucigalpa</p>
+          <div class="project-image">
+            <img src="coyolito.png" alt="Plaza Macuelizo">
+          </div>
+          <div class="project-info">
+            <h3>Plaza Macuelizo</h3>
+            <p>Comercial · Tegucigalpa</p>
+            <span>Diseño y Construcción · 950 m²</span>
+          </div>
         </article>
 
         <article class="project-card" data-category="residencial">
-<div class="project-image" style="height: 200px; overflow: hidden; border-radius: 8px 8px 0 0;">
-    <img src="coyolito.png" alt="Casa de Playa" style="width: 100%; height: 100%; object-fit: cover;">
-</div>
-          <h3>Casa de Playa</h3>
-          <p>Diseño y Construcción de 600m² - Coyolito</p>
+          <div class="project-image">
+            <img src="coyolito.png" alt="Casa de Playa">
+          </div>
+          <div class="project-info">
+            <h3>Casa de Playa</h3>
+            <p>Residencial · Coyolito</p>
+            <span>Diseño y Construcción · 600 m²</span>
+          </div>
         </article>
 
         <article class="project-card" data-category="comercial">
-<div class="project-image" style="height: 200px; overflow: hidden; border-radius: 8px 8px 0 0;">
-    <img src="toyota sps-Fotografia.jpg" alt="Grupo Flores Toyota" style="width: 100%; height: 100%; object-fit: cover;">
-</div>
-          <h3>Grupo Flores Toyota</h3>
-          <p>Sala de Ventas y Areas Administrativas - Diseño y Construcción de 5,500 m² - San Pedro Sula </p>
+          <div class="project-image">
+            <img src="toyota sps-Fotografia.jpg" alt="Grupo Flores Toyota">
+          </div>
+          <div class="project-info">
+            <h3>Grupo Flores Toyota</h3>
+            <p>Comercial · San Pedro Sula</p>
+            <span>Sala de Ventas y Áreas Administrativas · 5,500 m²</span>
+          </div>
         </article>
 
         <article class="project-card" data-category="comercial">
-<div class="project-image" style="height: 200px; overflow: hidden; border-radius: 8px 8px 0 0;">
-    <img src="ChatGPT Image Jun 29, 2026 at 03_06_14 PM.png" alt="Paseo Colonial" style="width: 100%; height: 100%; object-fit: cover;">
-</div>
-          <h3>Paseo Colonial</h3>
-          <p>Diseño y Construcción Centro Comercial Paseo el Trapiche - Bulevar Suyapa, Tegucigalpa </p>
+          <div class="project-image">
+            <img src="ChatGPT Image Jun 29, 2026 at 03_06_14 PM.png" alt="Paseo Colonial">
+          </div>
+          <div class="project-info">
+            <h3>Paseo Colonial</h3>
+            <p>Comercial · Bulevar Suyapa, Tegucigalpa</p>
+            <span>Centro Comercial Paseo El Trapiche</span>
+          </div>
         </article>
 
         <article class="project-card" data-category="residencial">
-          <div class="project-image">Foto del proyecto</div>
-          <h3>Casa Familiar </h3>
-          <p>Diseño y Construcción de 780 m² - El Hatillo, Tegucigalpa</p>
+          <div class="project-image placeholder">Foto del proyecto</div>
+          <div class="project-info">
+            <h3>Casa Familiar</h3>
+            <p>Residencial · El Hatillo, Tegucigalpa</p>
+            <span>Diseño y Construcción · 780 m²</span>
+          </div>
         </article>
 
         <article class="project-card" data-category="comercial">
-          <div class="project-image">Foto del proyecto</div>
-          <h3>Paseo Juan Pablo</h3>
-          <p>Centro Comercial - Diseño y Construcción de 18,000 m² - Ave. Juan Pablo 2, Tegucigalpa</p>
+          <div class="project-image placeholder">Foto del proyecto</div>
+          <div class="project-info">
+            <h3>Paseo Juan Pablo</h3>
+            <p>Comercial · Ave. Juan Pablo II, Tegucigalpa</p>
+            <span>Diseño y Construcción · 18,000 m²</span>
+          </div>
         </article>
-        
+
         <article class="project-card" data-category="residencial">
-          <div class="project-image">Foto del proyecto</div>
-          <h3>Cancha Pickleball</h3>
-          <p>Diseño y Construcción de 234.55m² - Tegucigalpa</p>
+          <div class="project-image placeholder">Foto del proyecto</div>
+          <div class="project-info">
+            <h3>Cancha Pickleball</h3>
+            <p>Residencial · Tegucigalpa</p>
+            <span>Diseño y Construcción · 234.55 m²</span>
+          </div>
         </article>
-        
-         <article class="project-card" data-category="residencial">
-          <div class="project-image">Foto del proyecto</div>
-          <h3>Casa Familiar </h3>
-          <p>Diseño y Construcción de 650 m² - El Hatillo, Tegucigalpa</p>
+
+        <article class="project-card" data-category="residencial">
+          <div class="project-image placeholder">Foto del proyecto</div>
+          <div class="project-info">
+            <h3>Casa Familiar</h3>
+            <p>Residencial · El Hatillo, Tegucigalpa</p>
+            <span>Diseño y Construcción · 650 m²</span>
+          </div>
         </article>
+
       </div>
     </section>
 
     <section id="servicios" class="section dark">
       <p class="eyebrow">Servicios</p>
       <h2>Del concepto a la construcción.</h2>
+
       <div class="service-grid">
         <div><h3>Diseño arquitectónico</h3><p>Anteproyectos, distribución, elevaciones y perspectivas.</p></div>
         <div><h3>Topografía</h3><p>Levantamientos y análisis del terreno para una planificación precisa.</p></div>
         <div><h3>Planos constructivos</h3><p>Documentación completa para ejecución y permisos.</p></div>
         <div><h3>Construcción</h3><p>Administración y ejecución de proyectos residenciales y comerciales.</p></div>
         <div><h3>Supervisión</h3><p>Control externo de proyectos diseñados por otros profesionales.</p></div>
-
       </div>
     </section>
 
     <section id="legado" class="section timeline-section">
       <p class="eyebrow">Legado familiar</p>
       <h2>Tres generaciones dedicadas a la arquitectura.</h2>
+
       <div class="timeline">
         <div><span>1970</span><p>Arq. Fernando Martínez Jiménez inicia su trayectoria profesional.</p></div>
         <div><span>1997</span><p>Arq. Fernando José Martínez Casey continúa y expande la firma.</p></div>
-        <div><span>Actualidad</span><p>La tercera generación continua su formacion en architectura, preservando una tradicion familiar de más de cinco decadas.</p></div>
+        <div><span>Actualidad</span><p>La tercera generación continúa su formación en arquitectura, preservando una tradición familiar de más de cinco décadas.</p></div>
       </div>
     </section>
 
@@ -185,24 +226,21 @@
       <h2>¿Listo para desarrollar su próximo proyecto?</h2>
       <p>Tegucigalpa, Honduras</p>
       <p><strong>Tel:</strong> +504 9990-8795</p>
-    <p><strong>WhatsApp:</strong> <a href="https://wa.me/50499908795" target="_blank" style="color: inherit; text-decoration: none;">+504 9990-8795</a></p>
-    <p><strong>Email:</strong> oficinaarquitectofm@gmail.com</p>
-    <a class="btn primary" href="https://wa.me/50499908795" target="_blank">Enviar WhatsApp</a>
+      <p><strong>WhatsApp:</strong> <a href="https://wa.me/50499908795" target="_blank" style="color: inherit; text-decoration: none;">+504 9990-8795</a></p>
+      <p><strong>Email:</strong> oficinaarquitectofm@gmail.com</p>
+      <a class="btn primary" href="https://wa.me/50499908795" target="_blank">Enviar WhatsApp</a>
     </section>
   </main>
 
-  <<footer>
-  <p>© 2026 FJM Arquitectos. Todos los derechos reservados.</p>
-</footer>
+  <footer>
+    <p>© 2026 FJM Arquitectos. Todos los derechos reservados.</p>
+  </footer>
 
-<!-- Lightbox -->
-<div id="lightbox" class="lightbox">
-  <span class="close">&times;</span>
-  <img class="lightbox-content" id="lightbox-img">
-</div>
+  <div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+  </div>
 
-<script src="script.js?v=4"></script>
+  <script src="script.js?v=5"></script>
 </body>
 </html>
-  
-  
