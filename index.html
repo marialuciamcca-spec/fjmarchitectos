@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>FJM Arquitectos | Portafolio</title>
-  <link rel="stylesheet" href="styles.css?v=20" />
+  <link rel="stylesheet" href="styles.css?v=22" />
 </head>
 
 <body>
@@ -41,22 +41,10 @@
     </section>
 
     <section class="stats">
-      <div>
-        <h2>250+</h2>
-        <p>Proyectos desarrollados</p>
-      </div>
-      <div>
-        <h2>56+</h2>
-        <p>Años de experiencia</p>
-      </div>
-      <div>
-        <h2>8+</h2>
-        <p>Ciudades de Honduras</p>
-      </div>
-      <div>
-        <h2>3</h2>
-        <p>Generaciones de arquitectos</p>
-      </div>
+      <div><h2>250+</h2><p>Proyectos desarrollados</p></div>
+      <div><h2>56+</h2><p>Años de experiencia</p></div>
+      <div><h2>8+</h2><p>Ciudades de Honduras</p></div>
+      <div><h2>3</h2><p>Generaciones de arquitectos</p></div>
     </section>
 
     <section id="nosotros" class="section">
@@ -95,25 +83,20 @@
     </section>
 
     <section id="proyectos" class="section project-section">
-      <div class="project-header">
-        <div>
-          <p class="eyebrow">Portafolio</p>
-          <h2>Proyectos destacados</h2>
-          <p class="project-intro">
-            Más de cinco décadas diseñando y construyendo espacios que inspiran, funcionan y perduran.
-          </p>
-        </div>
-      </div>
+      <p class="eyebrow">Portafolio</p>
+      <h2>Proyectos destacados</h2>
+      <p class="project-intro">
+        Una selección de proyectos residenciales, comerciales e industriales desarrollados por FJM Arquitectos.
+      </p>
 
       <div class="filters">
-        <button class="filter-btn active" data-filter="todos">Todos</button>
-        <button class="filter-btn" data-filter="comercial">Comercial</button>
-        <button class="filter-btn" data-filter="residencial">Residencial</button>
-        <button class="filter-btn" data-filter="industrial">Industrial</button>
+        <button class="filter-btn active" data-filter="todos" data-link="proyectos.html">Todos</button>
+        <button class="filter-btn" data-filter="comercial" data-link="proyectos-comerciales.html">Comercial</button>
+        <button class="filter-btn" data-filter="residencial" data-link="proyectos-residenciales.html">Residencial</button>
+        <button class="filter-btn" data-filter="industrial" data-link="proyectos-industriales.html">Industrial</button>
       </div>
 
       <div class="project-grid">
-
         <article class="project-card" data-category="comercial">
           <div class="project-image">
             <img src="coyolito.png" alt="Plaza Macuelizo">
@@ -153,7 +136,7 @@
           </div>
           <div class="project-info">
             <h3>Paseo Colonial</h3>
-            <p>Comercial · Bulevar Suyapa, Tegucigalpa</p>
+            <p>Comercial · Bulevar Suyapa</p>
             <span>Centro Comercial Paseo El Trapiche</span>
           </div>
         </article>
@@ -162,7 +145,7 @@
           <div class="project-image placeholder">Foto del proyecto</div>
           <div class="project-info">
             <h3>Casa Familiar</h3>
-            <p>Residencial · El Hatillo, Tegucigalpa</p>
+            <p>Residencial · El Hatillo</p>
             <span>Diseño y Construcción · 780 m²</span>
           </div>
         </article>
@@ -171,7 +154,7 @@
           <div class="project-image placeholder">Foto del proyecto</div>
           <div class="project-info">
             <h3>Paseo Juan Pablo</h3>
-            <p>Comercial · Ave. Juan Pablo II, Tegucigalpa</p>
+            <p>Comercial · Tegucigalpa</p>
             <span>Diseño y Construcción · 18,000 m²</span>
           </div>
         </article>
@@ -185,15 +168,18 @@
           </div>
         </article>
 
-        <article class="project-card" data-category="residencial">
+        <article class="project-card" data-category="industrial">
           <div class="project-image placeholder">Foto del proyecto</div>
           <div class="project-info">
-            <h3>Casa Familiar</h3>
-            <p>Residencial · El Hatillo, Tegucigalpa</p>
-            <span>Diseño y Construcción · 650 m²</span>
+            <h3>Central de Bodegas</h3>
+            <p>Industrial · Tegucigalpa</p>
+            <span>Bodegas y espacios logísticos</span>
           </div>
         </article>
+      </div>
 
+      <div class="more-projects">
+        <a id="moreProjectsBtn" href="proyectos.html" class="btn primary">Ver más proyectos</a>
       </div>
     </section>
 
@@ -241,6 +227,6 @@
     <img class="lightbox-content" id="lightbox-img">
   </div>
 
-  <script src="script.js?v=6"></script>
+  <script src="script.js?v=8"></script>
 </body>
 </html>
