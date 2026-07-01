@@ -226,6 +226,7 @@ h2 {
 }
 
 .filter-btn {
+  display: inline-block;
   border: none;
   background: transparent;
   padding: 10px 0;
@@ -237,10 +238,12 @@ h2 {
   text-transform: uppercase;
   font-size: 0.78rem;
   text-decoration: none;
+  border-bottom: 2px solid transparent;   /* ← conserva la línea gruesa */
 }
 
 .filter-btn.active {
   color: var(--red);
+  border-bottom: 2px solid var(--red);     /* ← conserva solo la línea gruesa */
 }
 
 .project-grid {
@@ -423,7 +426,23 @@ footer {
     opacity: 1;
   }
 }
+/* Enlaces de filtros del portafolio */
 
+.filters a {
+  text-decoration: none;
+}
+
+.filters a:hover {
+  text-decoration: none;
+}
+
+.filters a:visited {
+  text-decoration: none;
+}
+
+.filters a:active {
+  text-decoration: none;
+}
 /* RESPONSIVE */
 
 @media (max-width: 850px) {
