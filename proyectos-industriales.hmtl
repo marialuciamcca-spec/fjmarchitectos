@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proyectos Industriales | FJM Arquitectos</title>
+  <link rel="stylesheet" href="styles.css?v=22" />
+</head>
+
+<body>
+<header class="header">
+  <nav class="navbar">
+    <a href="index.html#inicio" class="logo">
+      <img src="fjmlogo2.jpg" alt="FJM Arquitectos">
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="index.html#nosotros">Nosotros</a></li>
+      <li><a href="index.html#proyectos">Proyectos</a></li>
+      <li><a href="index.html#servicios">Servicios</a></li>
+      <li><a href="index.html#legado">Legado</a></li>
+      <li><a href="index.html#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+<section class="section project-section">
+<p class="eyebrow">Portafolio industrial</p>
+<h2>Proyectos industriales</h2>
+<p class="project-intro">Bodegas, espacios logísticos y proyectos industriales.</p>
+
+<div class="filters">
+  <a class="filter-btn" href="proyectos.html">Todos</a>
+  <a class="filter-btn" href="proyectos-comerciales.html">Comercial</a>
+  <a class="filter-btn" href="proyectos-residenciales.html">Residencial</a>
+  <a class="filter-btn active" href="proyectos-industriales.html">Industrial</a>
+</div>
+
+<article class="project-card">
+  <div class="project-image placeholder">Foto del proyecto</div>
+  <div class="project-info">
+    <h3>Central de Bodegas</h3>
+    <p>Industrial · Tegucigalpa</p>
+    <span>Bodegas y espacios logísticos</span>
+  </div>
+</article>
+
+<article class="project-card">
+  <div class="project-image placeholder">Foto del proyecto</div>
+  <div class="project-info">
+    <h3>Complejo Logístico</h3>
+    <p>Industrial · Honduras</p>
+    <span>Diseño, planificación y construcción</span>
+  </div>
+</article>
+
+  </div>
+</section>
+</main>
+
+<footer>
+  <p>© 2026 FJM Arquitectos. Todos los derechos reservados.</p>
+</footer>
+
+<script src="script.js?v=8"></script>
+</body>
+</html>
