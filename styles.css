@@ -225,6 +225,14 @@ h2 {
   margin: 35px 0 28px;
 }
 
+.filters a,
+.filters a:link,
+.filters a:visited,
+.filters a:hover,
+.filters a:active {
+  text-decoration: none !important;
+}
+
 .filter-btn {
   display: inline-block;
   border: none;
@@ -237,19 +245,22 @@ h2 {
   letter-spacing: 1px;
   text-transform: uppercase;
   font-size: 0.78rem;
-  text-decoration: none;
-  border-bottom: 2px solid transparent;   /* ← conserva la línea gruesa */
+  text-decoration: none !important;
+  border-bottom: 2px solid transparent;
+  transition: color 0.25s ease, border-color 0.25s ease;
 }
 
+.filter-btn:hover,
 .filter-btn.active {
   color: var(--red);
-  border-bottom: 2px solid var(--red);     /* ← conserva solo la línea gruesa */
+  border-bottom: 2px solid var(--red);
 }
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 24px;
+  align-items: stretch;
 }
 
 .project-card {
@@ -257,15 +268,18 @@ h2 {
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 12px 28px rgba(0,0,0,.10);
-  transition: 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-7px);
+  box-shadow: 0 18px 38px rgba(0,0,0,.16);
 }
 
 .project-image {
-  height: 240px;
+  width: 100%;
+  aspect-ratio: 1 / 1;
   background: #eeeeee;
   display: flex;
   align-items: center;
@@ -280,11 +294,13 @@ h2 {
   height: 100%;
   object-fit: cover;
   cursor: pointer;
-  transition: 0.3s ease;
+  display: block;
+  transition: transform 0.4s ease, filter 0.4s ease;
 }
 
-.project-image img:hover {
-  transform: scale(1.04);
+.project-card:hover .project-image img {
+  transform: scale(1.06);
+  filter: brightness(1.04);
 }
 
 .project-info {
@@ -426,23 +442,7 @@ footer {
     opacity: 1;
   }
 }
-/* Enlaces de filtros del portafolio */
 
-.filters a {
-  text-decoration: none;
-}
-
-.filters a:hover {
-  text-decoration: none;
-}
-
-.filters a:visited {
-  text-decoration: none;
-}
-
-.filters a:active {
-  text-decoration: none;
-}
 /* RESPONSIVE */
 
 @media (max-width: 850px) {
@@ -477,9 +477,12 @@ footer {
 
   .stats,
   .split,
-  .project-grid,
   .service-grid,
   .timeline {
+    grid-template-columns: 1fr;
+  }
+
+  .project-grid {
     grid-template-columns: 1fr;
   }
 
@@ -490,24 +493,4 @@ footer {
   .logo img {
     height: 55px;
   }
-
-/* ===== PÁGINAS DE PROYECTOS ===== */
-
-.filters a,
-.filters a:link,
-.filters a:visited,
-.filters a:hover,
-.filters a:active {
-  text-decoration: none !important;
-  color: inherit;
-}
-
-.filters .filter-btn {
-  display: inline-block;
-  text-decoration: none !important;
-}
-
-.filters .filter-btn.active {
-  color: var(--red);
-}
 }
