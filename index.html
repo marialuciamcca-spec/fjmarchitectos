@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>FJM Arquitectos | Portafolio</title>
-  <link rel="stylesheet" href="styles.css?v=22" />
+  <link rel="stylesheet" href="styles.css?v=40" />
 </head>
 
 <body>
@@ -13,6 +13,8 @@
       <a href="#inicio" class="logo">
         <img src="fjmlogo2.jpg" alt="FJM Arquitectos">
       </a>
+
+      <button class="menu-btn" id="menuBtn">☰</button>
 
       <ul class="nav-links" id="navLinks">
         <li><a href="#nosotros">Nosotros</a></li>
@@ -53,12 +55,14 @@
           <p class="eyebrow">Sobre la firma</p>
           <h2>Arquitectura con experiencia, disciplina y visión</h2>
         </div>
+
         <div>
           <p>
             Desde 1970, la familia Martínez ha contribuido al desarrollo de proyectos arquitectónicos en Honduras.
             Hoy, FJM Arquitectos continúa esa trayectoria bajo la dirección del Arq. Fernando José Martínez Casey,
             ofreciendo servicios de diseño, supervisión y construcción a nivel nacional.
           </p>
+
           <p>
             <strong>Arq. Fernando José Martínez Casey</strong><br>
             Director de FJM Arquitectos<br>
@@ -89,12 +93,12 @@
         Una selección de proyectos residenciales, comerciales e industriales desarrollados por FJM Arquitectos.
       </p>
 
-<div class="filters">
-  <button class="filter-btn active" data-filter="todos">Todos</button>
-  <button class="filter-btn" data-filter="comercial">Comercial</button>
-  <button class="filter-btn" data-filter="residencial">Residencial</button>
-  <button class="filter-btn" data-filter="industrial">Industrial</button>
-</div>
+      <div class="filters">
+        <button class="filter-btn active" data-filter="todos">Todos</button>
+        <button class="filter-btn" data-filter="comercial">Comercial</button>
+        <button class="filter-btn" data-filter="residencial">Residencial</button>
+        <button class="filter-btn" data-filter="industrial">Industrial</button>
+      </div>
 
       <div class="project-grid">
         <article class="project-card" data-category="comercial">
@@ -126,16 +130,15 @@
           <div class="project-info">
             <h3>Grupo Flores Toyota</h3>
             <p>Comercial · San Pedro Sula</p>
-            <span>Sala de Ventas y Áreas Administrativas · 5,500 m²</span>
+            <span>Sala de ventas y áreas administrativas · 5,500 m²</span>
           </div>
         </article>
 
-
         <article class="project-card" data-category="residencial">
-          <div class="project-image placeholder">Foto del proyecto</div>
-           <img src="casapablo.png" alt="Casa Familiar">
+          <div class="project-image">
+            <img src="casapablo.png" alt="Casa Familiar">
           </div>
-      <div class="project-info">
+          <div class="project-info">
             <h3>Casa Familiar</h3>
             <p>Residencial · El Hatillo</p>
             <span>Diseño y Construcción · 780 m²</span>
@@ -143,7 +146,9 @@
         </article>
 
         <article class="project-card" data-category="comercial">
-          <div class="project-image placeholder">Foto del proyecto</div>
+          <div class="project-image placeholder">
+            Foto del proyecto
+          </div>
           <div class="project-info">
             <h3>Paseo Juan Pablo</h3>
             <p>Comercial · Tegucigalpa</p>
@@ -151,10 +156,10 @@
           </div>
         </article>
 
-
-
         <article class="project-card" data-category="industrial">
-          <div class="project-image placeholder">Foto del proyecto</div>
+          <div class="project-image placeholder">
+            Foto del proyecto
+          </div>
           <div class="project-info">
             <h3>Central de Bodegas</h3>
             <p>Industrial · Tegucigalpa</p>
@@ -163,9 +168,9 @@
         </article>
       </div>
 
-<div class="more-projects">
-  <a id="moreProjectsBtn" href="proyectos.html" class="btn primary">Ver más proyectos</a>
-</div>
+      <div class="more-projects">
+        <a id="moreProjectsBtn" href="proyectos.html" class="btn primary">Ver más proyectos</a>
+      </div>
     </section>
 
     <section id="servicios" class="section dark">
@@ -197,7 +202,7 @@
       <h2>¿Listo para desarrollar su próximo proyecto?</h2>
       <p>Tegucigalpa, Honduras</p>
       <p><strong>Tel:</strong> +504 9990-8795</p>
-      <p><strong>WhatsApp:</strong> <a href="https://wa.me/50499908795" target="_blank" style="color: inherit; text-decoration: none;">+504 9990-8795</a></p>
+      <p><strong>WhatsApp:</strong> <a href="https://wa.me/50499908795" target="_blank">+504 9990-8795</a></p>
       <p><strong>Email:</strong> oficinaarquitectofm@gmail.com</p>
       <a class="btn primary" href="https://wa.me/50499908795" target="_blank">Enviar WhatsApp</a>
     </section>
@@ -209,9 +214,9 @@
 
   <div id="lightbox" class="lightbox">
     <span class="close">&times;</span>
-    <img class="lightbox-content" id="lightbox-img">
+    <img class="lightbox-content" id="lightbox-img" alt="Proyecto ampliado">
   </div>
 
-  <script src="script.js?v=9"></script>
+  <script src="script.js?v=40"></script>
 </body>
 </html>
