@@ -5,6 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Todos los Proyectos | FJM Arquitectos</title>
   <link rel="stylesheet" href="styles.css?v=32" />
+
+  <style>
+    .project-image img {
+      cursor: zoom-in;
+    }
+
+    #projectModal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.88);
+      justify-content: center;
+      align-items: center;
+      z-index: 999999;
+      padding: 35px;
+    }
+
+    #projectModal.active {
+      display: flex;
+    }
+
+    #projectModal img {
+      max-width: 90%;
+      max-height: 90%;
+      object-fit: contain;
+      border-radius: 8px;
+      cursor: zoom-out;
+    }
+  </style>
 </head>
 
 <body>
@@ -43,7 +72,7 @@
 
     <article class="project-card">
       <div class="project-image">
-        <img src="toyota.png" alt="Grupo Flores Toyota" onclick="openProjectImage(this.src)">
+        <img src="toyota.png" alt="Grupo Flores Toyota" class="clickable-project-img">
       </div>
       <div class="project-info">
         <h3>Grupo Flores Toyota</h3>
@@ -54,7 +83,7 @@
 
     <article class="project-card">
       <div class="project-image">
-        <img src="casayeya.png" alt="Casa Familiar" onclick="openProjectImage(this.src)">
+        <img src="casayeya.png" alt="Casa Familiar" class="clickable-project-img">
       </div>
       <div class="project-info">
         <h3>Casa Familiar</h3>
@@ -65,7 +94,7 @@
 
     <article class="project-card">
       <div class="project-image">
-        <img src="paseo.png" alt="Paseo Colonial" onclick="openProjectImage(this.src)">
+        <img src="paseo.png" alt="Paseo Colonial" class="clickable-project-img">
       </div>
       <div class="project-info">
         <h3>Paseo Colonial</h3>
@@ -76,7 +105,7 @@
 
     <article class="project-card">
       <div class="project-image">
-        <img src="coyolito.png" alt="Casa de Playa" onclick="openProjectImage(this.src)">
+        <img src="coyolito.png" alt="Casa de Playa" class="clickable-project-img">
       </div>
       <div class="project-info">
         <h3>Casa de Playa</h3>
@@ -87,7 +116,7 @@
 
     <article class="project-card">
       <div class="project-image">
-        <img src="macuelizo.png" alt="Plaza Macuelizo" onclick="openProjectImage(this.src)">
+        <img src="macuelizo.png" alt="Plaza Macuelizo" class="clickable-project-img">
       </div>
       <div class="project-info">
         <h3>Plaza Macuelizo</h3>
@@ -98,7 +127,7 @@
 
     <article class="project-card">
       <div class="project-image">
-        <img src="casapablo.png" alt="Casa Familiar" onclick="openProjectImage(this.src)">
+        <img src="casapablo.png" alt="Casa Familiar" class="clickable-project-img">
       </div>
       <div class="project-info">
         <h3>Casa Familiar</h3>
@@ -118,7 +147,7 @@
 
     <article class="project-card">
       <div class="project-image">
-        <img src="cancha.png" alt="Cancha Pickleball" onclick="openProjectImage(this.src)">
+        <img src="cancha.png" alt="Cancha Pickleball" class="clickable-project-img">
       </div>
       <div class="project-info">
         <h3>Cancha Pickleball</h3>
@@ -140,7 +169,7 @@
 </section>
 </main>
 
-<div id="projectModal" class="project-modal" onclick="closeProjectImage()">
+<div id="projectModal">
   <img id="projectModalImg" src="" alt="">
 </div>
 
@@ -151,15 +180,21 @@
 <script src="script.js?v=8"></script>
 
 <script>
-function openProjectImage(src) {
-  document.getElementById("projectModal").style.display = "flex";
-  document.getElementById("projectModalImg").src = src;
-}
+  const projectModal = document.getElementById("projectModal");
+  const projectModalImg = document.getElementById("projectModalImg");
+  const clickableImages = document.querySelectorAll(".clickable-project-img");
 
-function closeProjectImage() {
-  document.getElementById("projectModal").style.display = "none";
-  document.getElementById("projectModalImg").src = "";
-}
+  clickableImages.forEach(img => {
+    img.addEventListener("click", function () {
+      projectModalImg.src = this.src;
+      projectModal.classList.add("active");
+    });
+  });
+
+  projectModal.addEventListener("click", function () {
+    projectModal.classList.remove("active");
+    projectModalImg.src = "";
+  });
 </script>
 
 </body>
