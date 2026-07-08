@@ -33,15 +33,17 @@
   <p class="project-intro">Centros comerciales, oficinas, locales y espacios corporativos.</p>
 
   <div class="filters">
-    <a class="filter-btn " href="proyectos.html">Todos</a>
+    <a class="filter-btn" href="proyectos.html">Todos</a>
     <a class="filter-btn active" href="proyectos-comerciales.html">Comercial</a>
-    <a class="filter-btn " href="proyectos-residenciales.html">Residencial</a>
-    <a class="filter-btn " href="proyectos-industriales.html">Industrial</a>
+    <a class="filter-btn" href="proyectos-residenciales.html">Residencial</a>
+    <a class="filter-btn" href="proyectos-industriales.html">Industrial</a>
   </div>
 
   <div class="project-grid">
     <article class="project-card">
-      <div class="project-image"><img src="toyota.png" alt="Grupo Flores Toyota"></div>
+      <div class="project-image">
+        <img src="toyota.png" alt="Grupo Flores Toyota" class="clickable-project-img">
+      </div>
       <div class="project-info">
         <h3>Grupo Flores Toyota</h3>
         <p>Comercial · San Pedro Sula</p>
@@ -50,7 +52,9 @@
     </article>
 
     <article class="project-card">
-      <div class="project-image"><img src="paseo.png" alt="Paseo Colonial"></div>
+      <div class="project-image">
+        <img src="paseo.png" alt="Paseo Colonial" class="clickable-project-img">
+      </div>
       <div class="project-info">
         <h3>Paseo Colonial</h3>
         <p>Comercial · Bulevar Suyapa</p>
@@ -75,15 +79,37 @@
         <span>Diseño y Construcción · 18,000 m²</span>
       </div>
     </article>
-
   </div>
 </section>
 </main>
+
+<div id="projectModal">
+  <img id="projectModalImg" src="" alt="">
+</div>
 
 <footer>
   <p>© 2026 FJM Arquitectos. Todos los derechos reservados.</p>
 </footer>
 
 <script src="script.js?v=8"></script>
+
+<script>
+const projectModal = document.getElementById("projectModal");
+const projectModalImg = document.getElementById("projectModalImg");
+const clickableImages = document.querySelectorAll(".clickable-project-img");
+
+clickableImages.forEach(img => {
+  img.addEventListener("click", function () {
+    projectModalImg.src = this.src;
+    projectModal.classList.add("active");
+  });
+});
+
+projectModal.addEventListener("click", function () {
+  projectModal.classList.remove("active");
+  projectModalImg.src = "";
+});
+</script>
+
 </body>
 </html>
