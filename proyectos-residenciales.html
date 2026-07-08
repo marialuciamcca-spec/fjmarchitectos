@@ -33,15 +33,18 @@
   <p class="project-intro">Casas, residencias familiares y proyectos habitacionales.</p>
 
   <div class="filters">
-    <a class="filter-btn " href="proyectos.html">Todos</a>
-    <a class="filter-btn " href="proyectos-comerciales.html">Comercial</a>
+    <a class="filter-btn" href="proyectos.html">Todos</a>
+    <a class="filter-btn" href="proyectos-comerciales.html">Comercial</a>
     <a class="filter-btn active" href="proyectos-residenciales.html">Residencial</a>
-    <a class="filter-btn " href="proyectos-industriales.html">Industrial</a>
+    <a class="filter-btn" href="proyectos-industriales.html">Industrial</a>
   </div>
 
   <div class="project-grid">
+
     <article class="project-card">
-      <div class="project-image"><img src="coyolito.png" alt="Casa de Playa"></div>
+      <div class="project-image">
+        <img src="coyolito.png" alt="Casa de Playa" class="clickable-project-img">
+      </div>
       <div class="project-info">
         <h3>Casa de Playa</h3>
         <p>Residencial · Coyolito</p>
@@ -50,7 +53,9 @@
     </article>
 
     <article class="project-card">
-      <div class="project-image"><img src="casapablo.png" alt="Casa Familiar"></div>
+      <div class="project-image">
+        <img src="casapablo.png" alt="Casa Familiar" class="clickable-project-img">
+      </div>
       <div class="project-info">
         <h3>Casa Familiar</h3>
         <p>Residencial · El Hatillo</p>
@@ -58,8 +63,10 @@
       </div>
     </article>
 
-        <article class="project-card">
-      <div class="project-image"><img src="casayeya.png" alt="Casa Familiar"></div>
+    <article class="project-card">
+      <div class="project-image">
+        <img src="casayeya.png" alt="Casa Familiar" class="clickable-project-img">
+      </div>
       <div class="project-info">
         <h3>Casa Familiar</h3>
         <p>Residencial · El Hatillo</p>
@@ -67,17 +74,21 @@
       </div>
     </article>
 
-        <article class="project-card">
-      <div class="project-image"><img src="casamartinez.png" alt="Casa Familiar"></div>
+    <article class="project-card">
+      <div class="project-image">
+        <img src="casamartinez.png" alt="Casa Familiar" class="clickable-project-img">
+      </div>
       <div class="project-info">
         <h3>Casa Familiar</h3>
         <p>Residencial · El Hatillo</p>
         <span>Diseño y Construcción · 650 m²</span>
       </div>
     </article>
-    
+
     <article class="project-card">
-      <div class="project-image"><img src="cancha.png" alt="Cancha Pickleball"></div>
+      <div class="project-image">
+        <img src="cancha.png" alt="Cancha Pickleball" class="clickable-project-img">
+      </div>
       <div class="project-info">
         <h3>Cancha Pickleball</h3>
         <p>Residencial · Tegucigalpa</p>
@@ -89,10 +100,33 @@
 </section>
 </main>
 
+<div id="projectModal">
+  <img id="projectModalImg" src="" alt="">
+</div>
+
 <footer>
   <p>© 2026 FJM Arquitectos. Todos los derechos reservados.</p>
 </footer>
 
 <script src="script.js?v=8"></script>
+
+<script>
+const projectModal = document.getElementById("projectModal");
+const projectModalImg = document.getElementById("projectModalImg");
+const clickableImages = document.querySelectorAll(".clickable-project-img");
+
+clickableImages.forEach(img => {
+  img.addEventListener("click", function () {
+    projectModalImg.src = this.src;
+    projectModal.classList.add("active");
+  });
+});
+
+projectModal.addEventListener("click", function () {
+  projectModal.classList.remove("active");
+  projectModalImg.src = "";
+});
+</script>
+
 </body>
 </html>
