@@ -494,3 +494,10 @@ footer {
     height: 55px;
   }
 }
+.project-image a{
+    display:block;
+}
+
+.project-image img{
+    cursor:zoom-in;
+}
