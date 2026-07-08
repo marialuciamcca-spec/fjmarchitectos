@@ -43,9 +43,7 @@
 
     <article class="project-card">
       <div class="project-image">
-        <a href="toyota.png" target="_blank">
-          <img src="toyota.png" alt="Grupo Flores Toyota">
-        </a>
+        <img src="toyota.png" alt="Grupo Flores Toyota" onclick="openProjectImage(this.src)">
       </div>
       <div class="project-info">
         <h3>Grupo Flores Toyota</h3>
@@ -56,9 +54,7 @@
 
     <article class="project-card">
       <div class="project-image">
-        <a href="casayeya.png" target="_blank">
-          <img src="casayeya.png" alt="Casa Familiar">
-        </a>
+        <img src="casayeya.png" alt="Casa Familiar" onclick="openProjectImage(this.src)">
       </div>
       <div class="project-info">
         <h3>Casa Familiar</h3>
@@ -69,9 +65,7 @@
 
     <article class="project-card">
       <div class="project-image">
-        <a href="paseo.png" target="_blank">
-          <img src="paseo.png" alt="Paseo Colonial">
-        </a>
+        <img src="paseo.png" alt="Paseo Colonial" onclick="openProjectImage(this.src)">
       </div>
       <div class="project-info">
         <h3>Paseo Colonial</h3>
@@ -82,9 +76,7 @@
 
     <article class="project-card">
       <div class="project-image">
-        <a href="coyolito.png" target="_blank">
-          <img src="coyolito.png" alt="Casa de Playa">
-        </a>
+        <img src="coyolito.png" alt="Casa de Playa" onclick="openProjectImage(this.src)">
       </div>
       <div class="project-info">
         <h3>Casa de Playa</h3>
@@ -93,22 +85,20 @@
       </div>
     </article>
 
-        <article class="project-card" data-category="comercial">
-          <div class="project-image">
-            <img src="macuelizo.png" alt="Plaza Macuelizo">
-          </div>
-          <div class="project-info">
-            <h3>Plaza Macuelizo</h3>
-            <p>Comercial · Tegucigalpa</p>
-            <span>Diseño y Construcción · 950 m²</span>
-          </div>
-        </article>
-        
     <article class="project-card">
       <div class="project-image">
-        <a href="casapablo.png" target="_blank">
-          <img src="casapablo.png" alt="Casa Familiar">
-        </a>
+        <img src="macuelizo.png" alt="Plaza Macuelizo" onclick="openProjectImage(this.src)">
+      </div>
+      <div class="project-info">
+        <h3>Plaza Macuelizo</h3>
+        <p>Comercial · Tegucigalpa</p>
+        <span>Diseño y Construcción · 950 m²</span>
+      </div>
+    </article>
+
+    <article class="project-card">
+      <div class="project-image">
+        <img src="casapablo.png" alt="Casa Familiar" onclick="openProjectImage(this.src)">
       </div>
       <div class="project-info">
         <h3>Casa Familiar</h3>
@@ -128,9 +118,7 @@
 
     <article class="project-card">
       <div class="project-image">
-        <a href="cancha.png" target="_blank">
-          <img src="cancha.png" alt="Cancha Pickleball">
-        </a>
+        <img src="cancha.png" alt="Cancha Pickleball" onclick="openProjectImage(this.src)">
       </div>
       <div class="project-info">
         <h3>Cancha Pickleball</h3>
@@ -152,10 +140,27 @@
 </section>
 </main>
 
+<div id="projectModal" class="project-modal" onclick="closeProjectImage()">
+  <img id="projectModalImg" src="" alt="">
+</div>
+
 <footer>
   <p>© 2026 FJM Arquitectos. Todos los derechos reservados.</p>
 </footer>
 
 <script src="script.js?v=8"></script>
+
+<script>
+function openProjectImage(src) {
+  document.getElementById("projectModal").style.display = "flex";
+  document.getElementById("projectModalImg").src = src;
+}
+
+function closeProjectImage() {
+  document.getElementById("projectModal").style.display = "none";
+  document.getElementById("projectModalImg").src = "";
+}
+</script>
+
 </body>
 </html>
