@@ -86,3 +86,22 @@ document.addEventListener("keydown", (e) => {
     lightbox.style.display = "none";
   }
 });
+
+const popupImages = document.querySelectorAll(".project-popup");
+const imageModal = document.getElementById("imageModal");
+const modalImage = document.getElementById("modalImage");
+
+popupImages.forEach(image => {
+  image.addEventListener("click", function(e) {
+    e.preventDefault();
+    imageModal.classList.add("show");
+    modalImage.src = this.href;
+  });
+});
+
+if (imageModal) {
+  imageModal.addEventListener("click", () => {
+    imageModal.classList.remove("show");
+    modalImage.src = "";
+  });
+}
